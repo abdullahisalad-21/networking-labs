@@ -45,3 +45,19 @@ tracert google.com
 - How to diagnose connectivity issues  
 - How to isolate DNS vs routing problems  
 - How to follow a structured troubleshooting process  
+
+
+
+## Scenario: DNS not working
+
+A user could browse using IP addresses but not website names.  
+I tested DNS:
+
+nslookup google.com
+
+It failed.  
+I flushed DNS:
+
+ipconfig /flushdns
+
+Then tested again — DNS resolved correctly.
